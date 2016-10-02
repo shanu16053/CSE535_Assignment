@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:id="@+id/reg_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:onClick="register" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="suggetion"
+        android:id="@+id/sug_button"
+        android:layout_below="@id/reg_button"
+        android:onClick="sugetion"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="feedback"
+        android:id="@+id/feed_button"
+        android:onClick="feedback"
+        android:layout_below="@+id/sug_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show number of student registered"
+        android:id="@+id/count"
+        android:onClick="countStudent"
+        android:layout_below="@+id/feed_button"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
